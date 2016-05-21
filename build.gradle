@@ -34,6 +34,10 @@ configurations {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-starter-actuator")
+	compile group: 'net.java.dev.jna', name: 'jna', version: '4.2.2'
+	compile group: 'org.jvnet.com4j', name: 'com4j', version: '2.1'
+	compile group: 'com.google.collections', name: 'google-collections', version: '1.0'
+	compile group: 'com.googlecode.lambdaj', name: 'lambdaj', version: '2.3.3'
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
