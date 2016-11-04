@@ -1,3 +1,5 @@
 # KOSPIRestAPI
 
-
+```
+$ gradle --info
+```

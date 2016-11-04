@@ -10,12 +10,12 @@ import org.junit.Test;
 public class CpCodeMgrTest {
 
 	private ICpCodeMgr iCpCodeMgr;
-	private CpCodeMgr cpCodeMgr;
+	// private CpCodeMgr cpCodeMgr;
 
 	@Before
 	public void setUp() throws Exception {
 		if(null == iCpCodeMgr) iCpCodeMgr = ClassFactory.createCpCodeMgr();
-		if(null == cpCodeMgr) cpCodeMgr = new CpCodeMgr();
+		// if(null == cpCodeMgr) cpCodeMgr = new CpCodeMgr();
 	}
 
 	@Test
@@ -30,11 +30,11 @@ public class CpCodeMgrTest {
 		System.out.println((String)objs[0]);
 	}
 
-	@Test
-	public void testGetStockListByMarket() {
-		List<String> codes = cpCodeMgr.getStockListByMarket(CPE_MARKET_KIND.CPC_MARKET_KOSPI);
-		assertTrue(0 < codes.size());		
-		assertEquals("A000020", codes.get(0));
-	}
+	// @Test
+	// public void testGetStockListByMarket() {
+	// 	List<String> codes = cpCodeMgr.getStockListByMarket(CPE_MARKET_KIND.CPC_MARKET_KOSPI);
+	// 	assertTrue(0 < codes.size());		
+	// 	assertEquals("A000020", codes.get(0));
+	// }
 
 }

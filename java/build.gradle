@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.3.5.RELEASE'
+		springBootVersion = '1.4.1.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -15,6 +15,7 @@ apply plugin: 'eclipse-wtp'
 apply plugin: 'spring-boot' 
 apply plugin: 'war'
 
+compileJava.options.encoding = 'EUC-KR'
 
 war {
 	baseName = 'kospiapi'
@@ -51,5 +52,5 @@ eclipse {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
+    gradleVersion = '3.1'
 }
