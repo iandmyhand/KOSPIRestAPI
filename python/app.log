@@ -1,0 +1,299 @@
+[I 161105 04:17:56 hello:35] Starting app...
+[W 161105 04:18:04 web:1971] 404 GET /d (::1) 3.00ms
+[W 161105 04:18:06 web:1971] 404 GET /favicon.ico (::1) 0.95ms
+[I 161105 04:18:09 web:1971] 304 GET / (::1) 4.00ms
+[I 161105 04:19:38 hello:35] Starting app...
+[I 161105 04:19:47 web:1971] 200 GET / (::1) 1.00ms
+[I 161105 04:26:05 server:38] Starting app...
+[I 161105 04:26:09 web:1971] 304 GET / (::1) 1.99ms
+[E 161105 04:26:21 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:22 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:22 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:27 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:37 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:37 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[W 161105 04:26:39 web:1971] 404 GET /cpUtil/cpCybos/isConnec (::1) 1.00ms
+[E 161105 04:26:42 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:42 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:42 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:26:47 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[I 161105 04:26:56 autoreload:204] C:\Projects\KOSPIRestAPI\python\cybos\cputil.py modified; restarting server
+[I 161105 04:26:56 server:38] Starting app...
+[I 161105 04:27:00 server:38] Starting app...
+[I 161105 04:27:00 server:49] Maybe server stopping...
+[I 161105 04:27:03 server:38] Starting app...
+[I 161105 04:27:03 server:49] Maybe server stopping...
+[E 161105 04:27:17 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[I 161105 04:27:42 autoreload:204] C:\Projects\KOSPIRestAPI\python\cybos\cputil.py modified; restarting server
+[I 161105 04:28:01 server:38] Starting app...
+[I 161105 04:28:01 server:38] Starting app...
+[I 161105 04:28:01 server:49] Maybe server stopping...
+[E 161105 04:28:08 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:28:08 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[W 161105 04:28:13 web:1971] 404 GET /cpUtil/cpCybos/isConnectd (::1) 2.00ms
+[E 161105 04:28:17 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:28:17 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:28:17 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:28:17 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[E 161105 04:28:22 http1connection:54] Uncaught exception
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\http1connection.py", line 238, in _read_message
+        delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\httpserver.py", line 289, in finish
+        self.delegate.finish()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2047, in finish
+        self.execute()
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 2067, in execute
+        **self.handler_kwargs)
+    TypeError: __init__() takes 1 positional argument but 3 were given
+[I 161105 04:28:44 autoreload:204] C:\Projects\KOSPIRestAPI\python\cybos\cputil.py modified; restarting server
+[I 161105 04:28:45 server:38] Starting app...
+[I 161105 04:28:50 server:38] Starting app...
+[I 161105 04:28:50 server:49] Maybe server stopping...
+[I 161105 04:28:52 web:1971] 200 GET /cpUtil/cpCybos/isConnect (::1) 278.97ms
+[I 161105 04:29:08 autoreload:204] C:\Projects\KOSPIRestAPI\python\cybos\cputil.py modified; restarting server
+[I 161105 04:29:11 server:38] Starting app...
+[I 161105 04:29:11 server:38] Starting app...
+[I 161105 04:29:11 server:49] Maybe server stopping...
+[I 161105 04:30:06 autoreload:204] server.py modified; restarting server
+[I 161105 04:30:10 server:38] Starting app...
+[I 161105 04:30:10 server:38] Starting app...
+[E 161105 04:30:10 server:57] [WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다
+[I 161105 04:30:10 server:49] Maybe server stopping...
+[I 161105 04:30:53 autoreload:204] server.py modified; restarting server
+[I 161105 04:31:03 server:38] Starting app...
+[I 161105 04:31:03 server:38] Starting app...
+[E 161105 04:31:03 server:57] [WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다
+[I 161105 04:31:03 server:46] Add stop callback.
+[I 161105 04:31:03 server:49] Maybe server stopping...
+[I 161105 04:31:44 autoreload:204] server.py modified; restarting server
+[I 161105 04:31:59 server:38] Starting app...
+[I 161105 04:31:59 server:38] Starting app...
+[E 161105 04:31:59 server:57] [WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다
+[I 161105 04:31:59 server:46] Add stop callback.
+[I 161105 04:31:59 server:49] Maybe server stopping...
+[I 161105 04:32:00 web:1971] 304 GET /cpUtil/cpCybos/isConnect (::1) 22.00ms
+[I 161105 04:32:21 web:1971] 304 GET /cpUtil/cpCybos/isConnect (::1) 2.00ms
+[W 161105 04:32:27 web:1971] 404 GET /cpUtil/cpCybos/isConnectd (::1) 0.00ms
+[I 161105 04:32:31 web:1971] 304 GET /cpUtil/cpCybos/isConnect (::1) 2.00ms
+[I 161105 04:36:30 server:38] Starting app...
+[I 161105 04:36:40 web:1971] 304 GET /cpUtil/cpCybos/isConnect (::1) 19.00ms
+[I 161105 04:37:45 web:1971] 200 GET /cpUtil/cpCybos/isConnect (::1) 5658.86ms
+[I 161105 04:44:06 server:40] Starting app...
+[I 161105 04:44:31 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 1244.94ms
+[I 161105 04:52:32 server:40] Starting app...
+[I 161105 04:52:34 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 1163.93ms
+[E 161105 04:52:48 web:1548] Uncaught exception GET /cpUtil/cpCybos/isConnect (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/cpUtil/cpCybos/isConnect', version='HTTP/1.1', remote_ip='::1', headers={'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36', 'Host': 'localhost:8888', 'If-None-Match': '"356a192b7913b04c54574d18c28d46e6395428ab"', 'Accept-Language': 'ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch, br'})
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 1425, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "<string>", line 3, in raise_exc_info
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 1627, in wrapper
+        result = method(self, *args, **kwargs)
+      File "C:\Projects\KOSPIRestAPI\python\cybos\cputil.py", line 16, in get
+        self.write({"cybosIsConnect": self._cpCybos.IsConnect()})
+    TypeError: 'int' object is not callable
+[E 161105 04:52:48 web:1971] 500 GET /cpUtil/cpCybos/isConnect (::1) 5675.86ms
+[I 161105 04:53:11 server:40] Starting app...
+[E 161105 04:53:34 web:1548] Uncaught exception GET /cpUtil/cpCybos/isConnect (::1)
+    HTTPServerRequest(protocol='http', host='localhost:8888', method='GET', uri='/cpUtil/cpCybos/isConnect', version='HTTP/1.1', remote_ip='::1', headers={'Accept-Encoding': 'gzip, deflate, sdch, br', 'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.87 Safari/537.36', 'Cache-Control': 'max-age=0', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Connection': 'keep-alive', 'Host': 'localhost:8888', 'Upgrade-Insecure-Requests': '1', 'Accept-Language': 'ko-KR,ko;q=0.8,en-US;q=0.6,en;q=0.4'})
+    Traceback (most recent call last):
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 1425, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "<string>", line 3, in raise_exc_info
+      File "C:\Program Files (x86)\Anaconda3\lib\site-packages\tornado\web.py", line 1627, in wrapper
+        result = method(self, *args, **kwargs)
+      File "C:\Projects\KOSPIRestAPI\python\cybos\cputil.py", line 16, in get
+        self.write({"cybosIsConnect": self._cpCybos.IsConnect()})
+    TypeError: 'int' object is not callable
+[E 161105 04:53:34 web:1971] 500 GET /cpUtil/cpCybos/isConnect (::1) 5581.86ms
+[I 161105 04:54:08 server:40] Starting app...
+[I 161105 04:54:17 web:1971] 200 GET /cpUtil/cpCybos/isConnect (::1) 5891.83ms
+[I 161105 04:55:28 server:40] Starting app...
+[I 161105 04:55:39 web:1971] 304 GET /cpUtil/cpCybos/isConnect (::1) 5831.83ms
+[I 161105 04:56:03 server:40] Starting app...
+[I 161105 04:56:12 web:1971] 304 GET /cpUtil/cpStockCode/getCount (::1) 1142.97ms
+[I 161105 04:57:35 server:40] Starting app...
+[I 161105 04:57:36 web:1971] 200 GET /cpUtil/cpStockCode/getCount (127.0.0.1) 1046.97ms
+[I 161105 04:57:41 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 6.00ms
+[I 161105 04:58:06 web:1971] 200 GET /cpUtil/cpCybos/isConnect (::1) 6125.83ms
+[I 161105 04:58:27 server:40] Starting app...
+[I 161105 04:58:31 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 1073.97ms
+[I 161105 05:17:10 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 8.00ms
+[I 161105 05:17:24 http1connection:253] Malformed HTTP message from 210.97.181.104: Malformed HTTP request line
+[I 161105 05:19:03 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 6.00ms
+[I 161105 05:22:28 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 6.00ms
+[I 161105 05:24:57 server:40] Starting app...
+[I 161105 05:24:59 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 1161.97ms
+[I 161105 05:35:11 web:1971] 200 GET /cpUtil/cpStockCode/getCount (::1) 6.00ms
