@@ -2,6 +2,7 @@
 
 ## Environments
 - OS: Windows Server 2012 32Bit
+    - Install Korean language pack.
     - Turn off firewall. (Manage it on AWS)
 - Java: JDK1.8(32bit)
     - Tomcat8(32bit)
