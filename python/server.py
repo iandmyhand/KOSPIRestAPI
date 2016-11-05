@@ -7,6 +7,9 @@ import tornado.log
 import tornado.options
 
 from cybos.cputil import CpCybosIsConnectHandler
+from cybos.cputil import CpCybosServerTypeHandler
+from cybos.cputil import CpCybosLimitRequestRemainTimeHandler
+from cybos.cputil import CpCybosGetLimitRemainCountHandler
 from cybos.cputil import CpStockCodeGetCountHandler
 
 logger = logging.getLogger("tornado.application")
@@ -21,14 +24,17 @@ class IndexHandler(tornado.web.RequestHandler):
 
 
 def make_server():
-    logger.info("Making app...")
+    logger.info("Making server...")
     args = sys.argv
-    args.append("--log_file_prefix=app.log")
+    args.append("--log_file_prefix=server.log")
     tornado.options.parse_command_line(args)
     app = tornado.web.Application(
         [
             (r"/", IndexHandler),
             (r"/cpUtil/cpCybos/isConnect", CpCybosIsConnectHandler),
+            (r"/cpUtil/cpCybos/serverType", CpCybosServerTypeHandler),
+            (r"/cpUtil/cpCybos/limitRequestRemainTime", CpCybosLimitRequestRemainTimeHandler),
+            (r"/cpUtil/cpCybos/getLimitRemainCount", CpCybosGetLimitRemainCountHandler),
             (r"/cpUtil/cpStockCode/getCount", CpStockCodeGetCountHandler)
         ],
         autoreload=False)
@@ -37,10 +43,10 @@ def make_server():
 
 
 def start_server(server):
-    logger.info("Starting app...")
-    server.listen(8888)
+    logger.info("Starting server...")
+    server.listen(18888)
     tornado.ioloop.IOLoop.instance().start()
-    logger.info("App stopped.")
+    logger.info("Server stopped.")
 
 
 def stop_server(server):
