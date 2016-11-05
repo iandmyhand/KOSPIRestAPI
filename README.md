@@ -10,6 +10,9 @@
     - Tomcat8(32bit)
 - Python: >= 3.5(32bit) [Anaconda](https://www.continuum.io/downloads)
 
+## Important!
+#### Execute everything with Administration authority.
+
 ## Java
 
 ```
@@ -20,6 +23,6 @@ $ gradle --info
 ## Python
 
 ```
-$ cd [PROJECT_ROOT]/java
+$ cd [PROJECT_ROOT]/python
 $ python server.py
 ```
