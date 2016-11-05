@@ -9,7 +9,7 @@
 - Python: >= 3.5(32bit) [Anaconda](https://www.continuum.io/downloads)
 - HTS: [Daichin CYBOS Plus](http://www.daishin.co.kr/ctx_webservice/sc_download/sg_user_download/svc_download/download_main.html)
     - Turn off keyboard security.
-- Editor: Sublime Text 3
+- Editor: [Sublime Text 3](https://www.sublimetext.com/3)
     - install 'ConvertToUTF8' package for CJK encoding files.
 - [Postman](https://www.getpostman.com/)
 
