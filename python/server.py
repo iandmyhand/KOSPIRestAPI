@@ -14,12 +14,22 @@ from cybos.cputil import CpStockCodeGetCountHandler
 
 logger = logging.getLogger("tornado.application")
 
+# & 'C:\Program Files (x86)\Anaconda3\python.exe' C:\Projects\KOSPIRestAPI\python\server.py
+
 
 class IndexHandler(tornado.web.RequestHandler):
 
     @tornado.web.asynchronous
     def get(self):
-        self.write("Hello, world")
+        self.write({"message": "Hello, world"})
+        self.finish()
+
+
+class PingHandler(tornado.web.RequestHandler):
+
+    @tornado.web.asynchronous
+    def get(self):
+        self.write({"status": "OK"})
         self.finish()
 
 
@@ -31,6 +41,7 @@ def make_server():
     app = tornado.web.Application(
         [
             (r"/", IndexHandler),
+            (r"/ping", PingHandler),
             (r"/cpUtil/cpCybos/isConnect", CpCybosIsConnectHandler),
             (r"/cpUtil/cpCybos/serverType", CpCybosServerTypeHandler),
             (r"/cpUtil/cpCybos/limitRequestRemainTime", CpCybosLimitRequestRemainTimeHandler),
