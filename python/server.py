@@ -10,6 +10,8 @@ from cybos.cputil.cpcybos import CpCybosIsConnectHandler
 from cybos.cputil.cpcybos import CpCybosServerTypeHandler
 from cybos.cputil.cpcybos import CpCybosLimitRequestRemainTimeHandler
 from cybos.cputil.cpcybos import CpCybosGetLimitRemainCountHandler
+from cybos.cputil.cpstockcode import CpStockCodeCodeToNameHandler
+from cybos.cputil.cpstockcode import CpStockCodeNameToCodeHandler
 from cybos.cputil.cpstockcode import CpStockCodeGetCountHandler
 
 logger = logging.getLogger("tornado.application")
@@ -46,6 +48,8 @@ def make_server():
             (r"/cpUtil/cpCybos/serverType", CpCybosServerTypeHandler),
             (r"/cpUtil/cpCybos/limitRequestRemainTime", CpCybosLimitRequestRemainTimeHandler),
             (r"/cpUtil/cpCybos/getLimitRemainCount", CpCybosGetLimitRemainCountHandler),
+            (r"/cpUtil/cpStockCode/codeToName", CpStockCodeCodeToNameHandler),
+            (r"/cpUtil/cpStockCode/nameToCode", CpStockCodeNameToCodeHandler),
             (r"/cpUtil/cpStockCode/getCount", CpStockCodeGetCountHandler)
         ],
         autoreload=True)
@@ -55,7 +59,7 @@ def make_server():
 
 def start_server(server):
     logger.info("Starting server...")
-    server.listen(80)
+    server.listen(8080)
     tornado.ioloop.IOLoop.instance().start()
     logger.info("Server stopped.")
 

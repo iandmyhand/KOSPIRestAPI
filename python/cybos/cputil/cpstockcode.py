@@ -23,7 +23,7 @@ class CpStockCodeCodeToNameHandler(CpStockCode):
     def fetch_data(self, code):
         _instance = self.get_hts_instance()
         _result = {
-            "name": int(_instance.CodeToName(code))
+            "name": _instance.CodeToName(code)
         }
         return _result
 
@@ -40,7 +40,7 @@ class CpStockCodeNameToCodeHandler(CpStockCode):
     def fetch_data(self, name):
         _instance = self.get_hts_instance()
         _result = {
-            "code": int(_instance.CodeToName(name))
+            "code": _instance.NameToCode(name)
         }
         return _result
 
