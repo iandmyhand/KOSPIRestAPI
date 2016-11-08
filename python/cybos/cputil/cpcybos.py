@@ -22,18 +22,18 @@ class CpCybos(Cybos):
     모듈위치: CpUtil.dll
     """
 
-    _cybos_instance = None
+    _hts_instance = None
 
-    def get_cybos_instance(self):
-        if not self._cybos_instance:
-            self._cybos_instance = win32com.client.Dispatch("CpUtil.CpCybos")
-        return self._cybos_instance
+    def get_hts_instance(self):
+        if not self._hts_instance:
+            self._hts_instance = win32com.client.Dispatch("CpUtil.CpCybos")
+        return self._hts_instance
 
 
 class CpCybosIsConnectHandler(CpCybos):
 
     def fetch_data(self):
-        _instance = self.get_cybos_instance()
+        _instance = self.get_hts_instance()
         _is_connect = int(_instance.IsConnect)
         _result = {
             "cybosIsConnect": _is_connect,
@@ -54,7 +54,7 @@ class CpCybosIsConnectHandler(CpCybos):
 class CpCybosServerTypeHandler(CpCybos):
 
     def fetch_data(self):
-        _instance = self.get_cybos_instance()
+        _instance = self.get_hts_instance()
         _server_type = int(_instance.ServerType)
         if 0 == _server_type:
             _server_type_text = "연결 끊김"
@@ -83,7 +83,7 @@ class CpCybosServerTypeHandler(CpCybos):
 class CpCybosLimitRequestRemainTimeHandler(CpCybos):
 
     def fetch_data(self):
-        _instance = self.get_cybos_instance()
+        _instance = self.get_hts_instance()
         _result = {
             "cybosLimitRequestRemainTime": int(_instance.LimitRequestRemainTime),
             "cybosLimitRequestRemainTimeExplanation": "요청 개수를 재계산하기까지 남은 시간(단위:milisecond)",
@@ -103,7 +103,7 @@ class CpCybosLimitRequestRemainTimeHandler(CpCybos):
 class CpCybosGetLimitRemainCountHandler(CpCybos):
 
     def fetch_data(self, limit_type):
-        _instance = self.get_cybos_instance()
+        _instance = self.get_hts_instance()
         _result = {
             "cybosLimitRemainCount": _instance.GetLimitRemainCount(limit_type),
             "cybosLimitRemainCountExplanation": "제한을 하기 전까지의 남은 요청개수",
@@ -125,31 +125,5 @@ class CpCybosGetLimitRemainCountHandler(CpCybos):
         _limit_type = self.get_query_argument("limitType", "LT_NONTRADE_REQUEST")
         _limit_type = self.get_code_by_name(LIMIT_TYPE, _limit_type)
         _result = self.fetch_data(_limit_type)
-        self.write(_result)
-        self.finish()
-
-
-class CpStockCode(Cybos):
-
-    _cybos_instance = None
-
-    def get_cybos_instance(self):
-        if not self._cybos_instance:
-            self._cybos_instance = win32com.client.Dispatch("CpUtil.CpStockCode")
-        return self._cybos_instance
-
-
-class CpStockCodeGetCountHandler(CpStockCode):
-
-    def fetch_data(self):
-        _instance = self.get_cybos_instance()
-        _result = {
-            "stockCodeCount": int(_instance.GetCount())
-        }
-        return _result
-
-    @tornado.web.asynchronous
-    def get(self):
-        _result = self.fetch_data()
         self.write(_result)
         self.finish()
