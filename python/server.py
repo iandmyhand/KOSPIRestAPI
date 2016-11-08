@@ -48,14 +48,14 @@ def make_server():
             (r"/cpUtil/cpCybos/getLimitRemainCount", CpCybosGetLimitRemainCountHandler),
             (r"/cpUtil/cpStockCode/getCount", CpStockCodeGetCountHandler)
         ],
-        autoreload=False)
+        autoreload=True)
     server = tornado.httpserver.HTTPServer(app)
     return server
 
 
 def start_server(server):
     logger.info("Starting server...")
-    server.listen(18888)
+    server.listen(80)
     tornado.ioloop.IOLoop.instance().start()
     logger.info("Server stopped.")
 
@@ -69,6 +69,8 @@ def stop_server(server):
 
 
 if __name__ == "__main__":
+    import os
+    print(os.path.dirname(os.path.abspath(__file__)))
     server = make_server()
     try:
         start_server(server)

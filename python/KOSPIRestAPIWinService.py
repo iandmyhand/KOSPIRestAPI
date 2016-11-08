@@ -9,7 +9,7 @@ import win32event
 import win32evtlogutil
 import os, sys, string, time
 
-from hello import make_server, start_server, stop_server
+from server import make_server, start_server, stop_server
 
 class aservice(win32serviceutil.ServiceFramework):
    
@@ -52,10 +52,10 @@ class aservice(win32serviceutil.ServiceFramework):
             else:
                 try:
                     servicemanager.LogInfoMsg(self._svc_name_ + " - STARTING!")
-                    if not self._server_:
-                        self._server_ = make_server()
+                    # if not self._server_:
+                        # self._server_ = make_server()
                     # start_server(self._server_)
-                    file_path = self._path_ + "\hello.py"
+                    file_path = self._path_ + "\server.py"
                     exec(open(file_path).read())             #Execute the script
                 except:
                     pass
