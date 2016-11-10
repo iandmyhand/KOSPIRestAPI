@@ -1,0 +1,11 @@
+
+# User
+USERID = ""
+PASSWD = ""
+CERT_PASSWD = ""
+
+
+# Production Host: "hts.ebestsec.co.kr"
+# Demo Host: "demo.ebestsec.co.kr"
+HOSTS = "hts.ebestsec.co.kr"
+

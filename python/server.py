@@ -1,7 +1,7 @@
+import logging
 import os
 import psutil
 import sys
-import logging
 import tornado.ioloop
 import tornado.web
 import tornado.httpserver
@@ -19,6 +19,8 @@ from cybos.cputil.cpstockcode import CpStockCodeCodeToFullCodeHandler
 from cybos.cputil.cpstockcode import CpStockCodeFullCodeToNameHandler
 from cybos.cputil.cpstockcode import CpStockCodeCodeToIndexHandler
 from cybos.cputil.cpstockcode import CpStockCodeGetCountHandler
+
+from xing.xasession import XingXASessionGetAccountListHandler
 
 logger = logging.getLogger("tornado.application")
 
@@ -44,13 +46,14 @@ class PingHandler(tornado.web.RequestHandler):
 def make_server():
     logger.info("Making server...")
     args = sys.argv
-    args.append("--log_file_prefix=server.log")
+    args.append("--log_file_prefix=logs/server.log")
     args.append("--log_rotate_mode=time")
     tornado.options.parse_command_line(args)
     app = tornado.web.Application(
         [
             (r"/", IndexHandler),
             (r"/ping", PingHandler),
+
             (r"/cpUtil/cpCybos/isConnect", CpCybosIsConnectHandler),
             (r"/cpUtil/cpCybos/serverType", CpCybosServerTypeHandler),
             (r"/cpUtil/cpCybos/limitRequestRemainTime", CpCybosLimitRequestRemainTimeHandler),
@@ -61,6 +64,8 @@ def make_server():
             (r"/cpUtil/cpStockCode/fullCodeToName", CpStockCodeFullCodeToNameHandler),
             (r"/cpUtil/cpStockCode/codeToIndex", CpStockCodeCodeToIndexHandler),
             (r"/cpUtil/cpStockCode/getCount", CpStockCodeGetCountHandler),
+
+            (r"/xing/xasession/getAccountList", XingXASessionGetAccountListHandler),
         ],
         autoreload=True)
     server = tornado.httpserver.HTTPServer(app)
