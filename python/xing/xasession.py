@@ -1,7 +1,5 @@
 import logging
-import pythoncom
 import tornado.web
-import win32com.client
 
 import settings
 
@@ -13,12 +11,12 @@ logger = logging.getLogger('tornado.application')
 class XingXASessionGetAccountListHandler(Xing):
 
     def fetch_data(self):
-        xaSession = self.login()
+        sessionInstance = self.login()
         _result = {
             'accounts': list()
         }
-        for i in range(xaSession.GetAccountListCount()):
-            _account = xaSession.GetAccountList(i)
+        for i in range(sessionInstance.GetAccountListCount()):
+            _account = sessionInstance.GetAccountList(i)
             _result['accounts'].append(_account)
         return _result
 

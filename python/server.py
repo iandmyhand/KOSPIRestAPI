@@ -21,6 +21,8 @@ from cybos.cputil.cpstockcode import CpStockCodeCodeToIndexHandler
 from cybos.cputil.cpstockcode import CpStockCodeGetCountHandler
 
 from xing.xasession import XingXASessionGetAccountListHandler
+from xing.stock.t1102_market_price import XingT1102MarketPriceHandler
+from xing.stock.t8430_stock_codes import XingT8430StockCodesHandler
 
 logger = logging.getLogger("tornado.application")
 
@@ -66,6 +68,8 @@ def make_server():
             (r"/cpUtil/cpStockCode/getCount", CpStockCodeGetCountHandler),
 
             (r"/xing/xasession/getAccountList", XingXASessionGetAccountListHandler),
+            (r"/xing/stock/marketPrice", XingT1102MarketPriceHandler),
+            (r"/xing/stock/stockCodes", XingT8430StockCodesHandler),
         ],
         autoreload=True)
     server = tornado.httpserver.HTTPServer(app)
