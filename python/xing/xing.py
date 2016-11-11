@@ -36,7 +36,9 @@ class Xing(tornado.web.RequestHandler):
 
     def login(self):
         sessionInstance = win32com.client.DispatchWithEvents('XA_Session.XASession', Xing.XASessionEventHandler)
+        logger.info("Connecting with xing server.")
         sessionInstance.ConnectServer(settings.HOST, 20001)
+        logger.info("Login...")
         sessionInstance.Login(settings.USERID, settings.PASSWD, settings.CERT_PASSWD, 0, 0)
 
         while Xing.XASessionEventHandler.login_state == 0:

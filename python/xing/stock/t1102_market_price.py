@@ -30,6 +30,7 @@ class XingT1102MarketPriceHandler(Xing):
         queryInstance = win32com.client.DispatchWithEvents("XA_DataSet.XAQuery", XingT1102MarketPriceHandler.XAQueryEventHandlerT1102)
         queryInstance.ResFileName = "C:\\eBEST\\xingAPI\\Res\\t1102.res"
         queryInstance.SetFieldData("t1102InBlock", "shcode", 0, code)
+        logger.info("Request with %s" % str(code))
         queryInstance.Request(0)
 
         while XingT1102MarketPriceHandler.XAQueryEventHandlerT1102.query_state == 0:
